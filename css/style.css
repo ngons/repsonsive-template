@@ -1,95 +1,125 @@
+/**
+ * Eric Meyer's Reset CSS v2.0 (http://meyerweb.com/eric/tools/css/reset/)
+ * http://cssreset.com
+ */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
 *, *:before, *:after {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
-    box-sizing: border-box;
+    box-sizing: border-box
 }
 
+/* All Styles below after CSS reset */
+
+
+/* The font size will default to 16px */
 body {
     font-size: 100%;
     font-family: "proxima-nova",sans-serif;
+}
+
+.wrapper {
     width: 100%;
-    height: 100%;
-}
-
-/*
-    Using width: 100% will always match the width of the container so it will stretch out the image.
-*/
-img {
-    max-width: 100%;
-}
-
-h1,h2 {
-    font-family: "adelle" ,serif;
-    font-size: 1.5em;
-}
-
-h2 {
-    font-size: 1em;
 }
 
 .container {
-    max-width: 980px;
+    max-width: 960px;
     margin: 0 auto;
 }
 
-#header {
+/* Anything expressed in em will be relative to the font-size property set in px */
+.header {
     width: 100%;
-}
-
-#banner {
-    width: 100%;
-    background-image: url('http://placehold.it/980x460');
-    background-repeat: no-repeat;
-
-}
-
-.banner-leftside, .banner-rightside {
-    display: inline-block;
-    vertical-align: top;
-    width: 49%;
-}
-
-.banner-rightside {
-    position: relative;
-}
-
-.cta-button {
-    border-radius: 5px;
-    -moz-border-radius: 5px;
-    -webkit-border-radius: 5px;
-    background-color: #800000;
-}
-
-.rightside-button {
-    max-width: 35.5%;
-    padding: 2.5%;
-    margin: 0 auto;
-    color: #FFFFFF;
-    text-align: center;
-}
-
-#steps {
-    width: 100%;
-}
-
-.step-one, .step-two, .step-three {
-    width: 32.333%;
-    display: inline-block;
-    vertical-align: top;
+    padding: 1em 0.5em 0 0.5em;
 }
 
 
-@media only screen and (max-width: 490px) {
-    #banner {
-        background-image: none;
+h1 {
+    font-size: 1.5em;
+}
+
+
+
+
+
+/* Start of media queries for devices */
+
+@media only screen and (max-width: 1280px) {
+    /* Generic Laptop */
+
+}
+
+@media only screen and (max-width: 1024px) {
+    /* Ipad Landscape */
+
+}
+
+@media only screen and (max-width: 800px) {
+    /* Tablets */
+
+}
+
+@media only screen and (max-width: 768px) {
+    /* Ipad Portrait */
+
+}
+
+@media only screen and (max-width: 600px) {
+    /* Smaller tablets I.E. - Kindle Fire */
+
+}
+
+@media only screen and (max-width: 414px) {
+    /* Mobile Devices - Iphone 6 and under */
+    h1 {
+        font-size: 1em;
     }
-    .banner-leftside, .banner-rightside {
-        display: block;
-        width: 100%;
-    }
-    .step-one, .step-two, .step-three {
-        width: 100%;
-        display: block;
+
+    p {
+        font-size: 0.75em;
     }
 
 }
