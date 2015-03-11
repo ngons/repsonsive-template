@@ -78,8 +78,8 @@ section {
     padding: 1em 0;
 }
 
-.banner img {
-    padding: 0 1em;
+.mobile-splash {
+    display: none;
 }
 
 /* Anything expressed in em will be relative to the font-size property set in px */
@@ -94,7 +94,22 @@ h1 {
     padding: 0 0 0.5em 0;
 }
 
+.banner {
+    position: relative;
+}
 
+.text-layer {
+    position: absolute;
+    left: 0;
+    top: 0;
+    max-width: 60em;
+}
+
+.left, .right {
+    display: inline-block;
+    width: 49%;
+    padding: 2em;
+}
 
 
 
@@ -127,6 +142,9 @@ h1 {
 
 @media only screen and (max-width: 414px) {
     /* Mobile Devices - Iphone 6 and under */
+    html {
+        font-size: 20px;
+    }
     h1 {
         font-size: 1.20em;
     }
@@ -139,10 +157,23 @@ h1 {
         padding: 2em 1em 0 1em;
     }
 
+    .left, .right {
+        display: block;
+        width: 100%;
+    }
+
+    .desktop-splash {
+        display: none;
+    }
+
+    .mobile-splash {
+        display: block;
+    }
+
 }
 
 @media only screen and (max-width: 320px) {
-    /* Mobile Devices - Iphone 6 and under */
+    /* Mobile devices with tiny screens */
     h1 {
         font-size: 1em;
     }
