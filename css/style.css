@@ -61,6 +61,10 @@ body {
     font-family: "proxima-nova",sans-serif;
 }
 
+img {
+    max-width: 100%;
+}
+
 .wrapper {
     width: 100%;
 }
@@ -68,6 +72,14 @@ body {
 .container {
     max-width: 960px;
     margin: 0 auto;
+}
+
+section {
+    padding: 1em 0;
+}
+
+.banner img {
+    padding: 0 1em;
 }
 
 /* Anything expressed in em will be relative to the font-size property set in px */
